@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react'
-
 const Miapi = ({ productsData, searchTerm }) => {
     const [products, setProducts] = useState([])
     useEffect(() => {
@@ -7,9 +6,7 @@ const Miapi = ({ productsData, searchTerm }) => {
         setProducts(productsData)
     }, [productsData])
 
-    console.log(searchTerm, 'SearchTerm desde MiaPI')
-    console.log(productsData,'ProductData desde MiaPI')
-
+ 
     const onDelete = async (id) => {
         try {
             const response = await fetch(`https://pokeapi.co/api/v2/pokemon/ditto`, {

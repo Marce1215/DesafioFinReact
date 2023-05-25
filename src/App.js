@@ -31,7 +31,7 @@ function App() {
     <>
       <Nav onSearchChange={handleSearchChange} />
       <div className="container">
-        <Miapi productsData={products} />
+        <Miapi productsData={products} searchTerm={search} />
       </div>
     </>
   );
